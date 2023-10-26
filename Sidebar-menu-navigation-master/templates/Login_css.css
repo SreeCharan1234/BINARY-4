@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background: url("book.jpg") no-repeat; 
+    background-size: cover;
+    background-position: center;
+    
+}
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 550px;
+    background: url('main.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%; 
+    height: 100%;
+    background: transparent;
+    padding: 90px;
+    color: #c38383;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content .logo{
+    font-size: 53px;
+    color: black;
+    margin-inline: 18%;
+    margin-top: 10%;
+    font-family:'gorgeous';
+}
+.text-sci{
+    padding: 20px 0;
+}
+
+.text-sci h2{
+    font-size: 40px;
+
+}
+.text-sci h2 span{
+    font-size: 35px;
+
+}
+.text-sci p{
+    font-size:15px ;
+
+}
+.container .logreg-box{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: calc(100% - 33%);
+    height: 100%;
+    overflow: hidden;   
+    /* color: black; */
+}
+.logreg-box .form-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* background: red; */
+    backdrop-filter: blur(10px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color :black
+}
+.logreg-box .form-box .Sign{
+    color: #131212;
+}
+.logreg-box .form-box.login{
+    transform: translateX(0);
+    transition: transform .6s ease;
+    transition-delay: .7s;
+    color:rgb(4, 4, 4) ;
+}
+.logreg-box.active .form-box.login{
+    transform: translateX(430px);
+    transition-delay: 0s;
+}
+
+.logreg-box .form-box.register{
+    transform: translateX(430px);
+    transition: transform .6s ease;
+    transition-delay: 0s;
+}
+.logreg-box.active .form-box.register{
+    transform: translateX(0);
+    transition-delay: .7s;
+}
+
+.form-box h2{
+    font-size: 32px;
+    text-align: center;
+}
+.form-box .input-box span{
+    color: #cb7777;
+}
+.form-box .input-box{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #5a7f39;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 28px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13%;
+    right: 0;
+    font-size: 19px;
+
+}
+.form-box .remember-forgot{
+    font-size:  14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: #d08080;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: black;
+    text-decoration: none;
+
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background:rgb(128, 205, 170);
+    color: #dd7a7a;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgb(0, 0, 0,.5);
+}
+.form-box .login-register{
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+.login-register p a{
+    color: #c98c8c;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+.login-register .register-link{
+    color: black;
+}
