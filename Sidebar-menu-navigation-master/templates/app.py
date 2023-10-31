@@ -3,7 +3,7 @@ import pyttsx3
 import openai
 app = Flask(__name__)
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "please enter your api key "
 # Define the default route to return the index.html file
 @app.route("/")
 def index():
